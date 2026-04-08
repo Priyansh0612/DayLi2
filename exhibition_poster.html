@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DayLi — Cool Platinum Tech Poster (Clean Header)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Cool Platinum Tech Tokens */
+      --bg-page: #F8FAFC; 
+      --bg-card: #FFFFFF; 
+      --bg-footer: #F1F5F9; 
+      
+      /* Cool Slate Typography */
+      --text-primary: #0F172A; 
+      --text-muted: #64748B;   
+      
+      /* Crisp, cool borders */
+      --border: rgba(15, 23, 42, 0.08);
+      --border-strong: rgba(15, 23, 42, 0.15);
+
+      /* Vibrant Tech Accents */
+      --accent-academic: #4338CA; 
+      --accent-meal: #EA580C;     
+      --accent-work: #0284C7;     
+      --accent-finance: #16A34A;  
+      
+      --hero-gradient: linear-gradient(135deg, #4338CA 0%, #0284C7 100%);
+    }
+
+    body {
+      background: #1E293B; 
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; 
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    /* ─── 1. THE POSTER WRAPPER ─── */
+    .poster {
+      background-color: var(--bg-page);
+      width: 100%;
+      max-width: 960px; 
+      min-height: 1440px; 
+      padding: 50px 46px 0; 
+      position: relative;
+      overflow: hidden; 
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 40px 100px rgba(15, 23, 42, 0.4);
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      flex-shrink: 0;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      /* Removed the gap since the text is gone */
+    }
+
+    /* 🔥 INCREASED LOGO SIZE 🔥 */
+    .logo-icon {
+      width: 68px; /* Bumped up significantly */
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-card);
+      border-radius: 20px; /* Slightly softer corners for the larger size */
+      box-shadow:
+        0 12px 24px rgba(15, 23, 42, 0.08),
+        inset 0 0 0 1px var(--border);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .logo-icon img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+
+    .header-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      border-radius: 100px;
+      padding: 10px 22px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px; 
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    /* ─── BENTO GRID CONTAINER ─── */
+    .bento-grid {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+    }
+
+    /* ─── HERO CARD ─── */
+    .hero-card {
+      display: flex;
+      flex-direction: row;
+      background: var(--bg-card);
+      border-radius: 36px;
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+      overflow: hidden;
+      position: relative;
+      flex: 1.1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 60px 0 60px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1.3;
+    }
+
+    /* 🔥 REDESIGNED HERO EYEBROW (Clean Typography) 🔥 */
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .dayli-mark {
+      color: var(--text-primary);
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    .eyebrow-dot {
+      color: var(--border-strong);
+    }
+
+    .hero-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 94px; 
+      font-weight: 900;
+      color: var(--text-primary);
+      line-height: 0.92;
+      letter-spacing: -3.5px;
+      margin: 24px 0 24px; /* Slightly tightened top margin */
+    }
+
+    .hero-title .accent-word {
+      background: var(--hero-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+
+    .hero-desc {
+      font-size: 19px; 
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 460px;
+      font-weight: 500;
+    }
+
+    .hero-pills {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .pill {
+      background: var(--bg-page);
+      border: 1px solid var(--border-strong);
+      border-radius: 100px;
+      padding: 10px 22px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      color: var(--text-primary);
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .hero-phone-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+
+    /* THE GLOWING AURA ORB */
+    .phone-aura {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 320px;
+      background: linear-gradient(135deg, rgba(67, 56, 202, 0.35), rgba(2, 132, 199, 0.35));
+      border-radius: 50%;
+      filter: blur(60px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .iphone-mockup {
+      position: relative;
+      flex-shrink: 0;
+      filter: drop-shadow(0 30px 40px rgba(15, 23, 42, 0.15));
+      z-index: 2;
+    }
+
+    .iphone-shell {
+      position: relative;
+      border-radius: 44px;
+      border: 4px solid var(--bg-card); 
+      background: #0F172A; 
+      overflow: hidden;
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.1);
+    }
+
+    .iphone-island {
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 76px;
+      height: 22px;
+      background: #0F172A;
+      border-radius: 20px;
+      z-index: 10;
+    }
+
+    .iphone-shell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      border-radius: 38px;
+    }
+
+    .iphone-hero {
+      width: 280px;
+      height: 560px;
+    }
+
+    /* ─── MODULE CARDS (Bottom half) ─── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      flex-shrink: 0;
+      flex: 0.9;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border-radius: 32px;
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.03);
+      padding: 44px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px; 
+    }
+
+    .fc-academic::after { background: linear-gradient(90deg, var(--accent-academic), #818CF8); }
+    .fc-meal::after { background: linear-gradient(90deg, var(--accent-meal), #FDBA74); }
+    .fc-work::after { background: linear-gradient(90deg, var(--accent-work), #7DD3FC); }
+    .fc-finance::after { background: linear-gradient(90deg, var(--accent-finance), #86EFAC); }
+
+    .feature-category {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px; 
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .feature-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 30px; 
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.8px;
+      margin-bottom: 14px;
+    }
+
+    .feature-desc {
+      font-size: 17px; 
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 500;
+      position: relative; 
+      z-index: 2;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: var(--bg-footer);
+      margin: 24px -46px 0;
+      padding: 32px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-strong);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .footer-logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.8px;
+    }
+
+    .footer-divider {
+      width: 1px;
+      height: 40px;
+      background: var(--border-strong);
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-project {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: 0.2px;
+    }
+
+    .footer-names {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .stack-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      color: var(--text-primary);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .stack-tags {
+      display: flex;
+      gap: 8px;
+    }
+
+    .stack-tag {
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      color: var(--text-primary);
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 4px rgba(15, 23, 42, 0.03);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="poster">
+
+    <div class="header">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <img src="assets/Logo.png" alt="DayLi Logo">
+        </div>
+      </div>
+      <div class="header-badge">Winter 2026</div>
+    </div>
+
+    <div class="bento-grid">
+
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            Your life, beautifully organized
+          </div>
+          <div>
+            <div class="hero-title">Four pillars.<br><span class="accent-word">One app.</span></div>
+            <p class="hero-desc">DayLi brings your academics, finances, work shifts, and meals into a single, unified
+              intelligence dashboard — engineered for the pace of student life.</p>
+          </div>
+          <div class="hero-pills">
+            <span class="pill">React Native · Expo</span>
+            <span class="pill">Supabase</span>
+            <span class="pill">Google Gemini AI</span>
+            <span class="pill">iOS · Android · Web</span>
+          </div>
+        </div>
+
+        <div class="hero-phone-area">
+          <div class="phone-aura"></div>
+          <div class="iphone-mockup">
+            <div class="iphone-shell iphone-hero">
+              <div class="iphone-island"></div>
+              <img src="assets/hero-iphone.png" alt="DayLi Dashboard"
+                onerror="this.onerror=null; this.src='https://placehold.co/400x850/F8FAFC/4338CA?text=DayLi+Dashboard'; this.style.opacity=0.9;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card fc-academic">
+          <div class="feature-category" style="color: var(--accent-academic);">
+            Academic
+          </div>
+          <h3 class="feature-title">Syllabus Execution</h3>
+          <p class="feature-desc">Upload your syllabus PDF to instantly reverse-engineer the semester. DayLi tracks your
+            active Courses, calculates your real-time Avg Grade, and warns you about what's Due Soon.</p>
+        </div>
+
+        <div class="feature-card fc-meal">
+          <div class="feature-category" style="color: var(--accent-meal);">
+            Meal
+          </div>
+          <h3 class="feature-title">Generative Meals</h3>
+          <p class="feature-desc">DayLi curates a 7-day contextual menu optimized around your Diet Type and budget. Swap
+            meals with 1-tap, and automatically hand off the menu into a Smart Grocery List.</p>
+        </div>
+
+        <div class="feature-card fc-work">
+          <div class="feature-category" style="color: var(--accent-work);">
+            Work
+          </div>
+          <h3 class="feature-title">Shift Optimizer</h3>
+          <p class="feature-desc">Hit your Target Work Hours without burning out. DayLi accounts for your Commute Time
+            to intelligently schedule shifts around your classes, ensuring you always have time to study.</p>
+        </div>
+
+        <div class="feature-card fc-finance">
+          <div class="feature-category" style="color: var(--accent-finance);">
+            Finance
+          </div>
+          <h3 class="feature-title">Safe to Spend</h3>
+          <p class="feature-desc">Stop relying on raw bank balances. Use OCR Receipt Scanning for instant logging, track
+            Active Subscriptions, and monitor your Essentials vs Lifestyle spending mix.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <span class="footer-logo">DayLi</span>
+        <div class="footer-divider"></div>
+        <div class="footer-meta">
+          <div class="footer-project">Lakehead University Thunder Bay · Final Year Exhibition 2026</div>
+          <div class="footer-names">Priyansh · Shlesha · Drumil</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

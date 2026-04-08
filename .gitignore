@@ -1,0 +1,112 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+.env
+
+# --- ADDED: Exclude scraped, DB, IDE, and log files ---
+.idea/
+*.log
+*.csv
+*.numbers
+*.sql
+*.jpg
+__pycache__/
+crawl_state.json
+crawl_Backup_state.json
+urls.txt
+urls2.txt
+error_log.txt
+
+# Local Test Scripts
+check_db.ts
+test_query*.ts
+check_imports.py
+check_unused.py
+
+# Crawler Logs and Data
+*.log
+error_log.txt
+crawl_state.json
+crawl_Backup_state.json
+gemini_models.json
+urls*.txt
+
+# Local Database & Migration Scripts
+fix_existing_db.sql
+expense_migration.sql
+sql_migration.sh
+
+# Local Utility Scripts
+update-web-layout.sh
+
+# Miscellaneous & Test Files
+Supabase Snippet Row-level Security Enforcement.csv
+receipt.jpg
+system_documentation.md
+
+# Auto-Generated & Unused Files
+output.css
+requirements.txt
+
+# Security Constraints & API Credentials
+google-services.json
+eas.json
+
+# Local Documentation
+ARCHITECTURE.md
+docs/architecture/Onboarding_and_Maintenance.md
+
+# Web Screens & Landing Page
+src/**/*.web.*
+landing-page/
+
+# Scripts & Utility Tools
+src/scripts/
+
+# Unused Components
+src/components/UnusedLegacyComponents.tsx
+
+# Editor Settings & Root Utility Scripts
+.vscode/
+scripts/
+
+# Asset Overrides for Local Use
+assets/images/login-spatial-bg.png

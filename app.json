@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "DayLi",
+    "slug": "DayLi",
+    "scheme": "dayli",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/Logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.priyansh.DayLi",
+      "infoPlist": {
+        "GIDClientID": "964350917184-ns6g2cqjo0uitgggsut7l03v5mujeoq6.apps.googleusercontent.com",
+        "NSCameraUsageDescription": "Allow DayLi to access your camera to scan receipts.",
+        "NSPhotoLibraryUsageDescription": "Allow DayLi to access your photos to scan receipts.",
+        "NSLocationWhenInUseUsageDescription": "Allow DayLi to use your location to show the local weather on your dashboard.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow DayLi to use your location to show the local weather on your dashboard.",
+        "NSLocationAlwaysUsageDescription": "Allow DayLi to use your location to show the local weather on your dashboard.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.964350917184-ns6g2cqjo0uitgggsut7l03v5mujeoq6"
+            ]
+          },
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.964350917184-ns6g2cqjo0uitgggsut7l03v5mujeoq6"
+            ]
+          }
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.priyansh.DayLi",
+      "windowSoftInputMode": "adjustResize",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/Logo.png"
+    },
+    "plugins": [
+      "expo-web-browser",
+      "@react-native-google-signin/google-signin",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow DayLi to access your photos to scan receipts.",
+          "cameraPermission": "Allow DayLi to access your camera to scan receipts."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow DayLi to use your location to show the local weather on your dashboard."
+        }
+      ],
+      "expo-localization",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6e82deb0-7b9f-4ba4-9080-fa58ad958912"
+      }
+    }
+  }
+}
