@@ -12,7 +12,7 @@
 
 DayLi is not just another planner; it's a **context-aware operating system** designed exclusively for the chaotic life of a student. It seamlessly unifies four critical domains—**Academics, Meal Planning, Expense Management, and Work Scheduling**—into a single, high-fidelity timeline.
 
-By leveraging **Google's Gemini 2.0 Flash**, DayLi transitions from being a passive tool to an active daily assistant. It autonomously parses university syllabi, performs intelligent OCR on financial receipts, and algorithmically anchors your meals within your free-time blocks.
+By leveraging **Advanced AI API integration**, DayLi transitions from being a passive tool to an active daily assistant. It autonomously parses university syllabi, performs intelligent OCR on financial receipts, and algorithmically anchors your meals within your free-time blocks.
 
 ---
 
@@ -43,7 +43,7 @@ DayLi is built using a state-of-the-art hybrid architecture:
 - **Frontend**: [React Native](https://reactnative.dev/) + [Expo](https://expo.dev/)
 - **Styling**: [NativeWind](https://www.nativewind.dev/) (Tailwind CSS) + Reanimated Glassmorphism
 - **Backend**: [Supabase](https://supabase.com/) (Postgres + RLS + Edge Functions)
-- **Intelligence Layer**: [Google Gemini 2.0 Flash](https://deepmind.google/technologies/gemini/)
+- **Intelligence Layer**: Integrated Generative AI APIs
 
 ---
 
