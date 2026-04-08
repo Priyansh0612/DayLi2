@@ -21,35 +21,35 @@
 
     :root {
       /* Cool Platinum Tech Tokens */
-      --bg-page: #F8FAFC; 
-      --bg-card: #FFFFFF; 
-      --bg-footer: #F1F5F9; 
-      
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-footer: #F1F5F9;
+
       /* Cool Slate Typography */
-      --text-primary: #0F172A; 
-      --text-muted: #64748B;   
-      
+      --text-primary: #0F172A;
+      --text-muted: #64748B;
+
       /* Crisp, cool borders */
       --border: rgba(15, 23, 42, 0.08);
       --border-strong: rgba(15, 23, 42, 0.15);
 
       /* Vibrant Tech Accents */
-      --accent-academic: #4338CA; 
-      --accent-meal: #EA580C;     
-      --accent-work: #0284C7;     
-      --accent-finance: #16A34A;  
-      
+      --accent-academic: #4338CA;
+      --accent-meal: #EA580C;
+      --accent-work: #0284C7;
+      --accent-finance: #16A34A;
+
       --hero-gradient: linear-gradient(135deg, #4338CA 0%, #0284C7 100%);
     }
 
     body {
-      background: #1E293B; 
+      background: #1E293B;
       font-family: 'Inter', sans-serif;
       color: var(--text-primary);
       -webkit-font-smoothing: antialiased;
       display: flex;
       justify-content: center;
-      align-items: flex-start; 
+      align-items: flex-start;
       padding: 40px 20px;
       min-height: 100vh;
     }
@@ -58,11 +58,11 @@
     .poster {
       background-color: var(--bg-page);
       width: 100%;
-      max-width: 960px; 
-      min-height: 1440px; 
-      padding: 50px 46px 0; 
+      max-width: 960px;
+      min-height: 1440px;
+      padding: 50px 46px 0;
       position: relative;
-      overflow: hidden; 
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       box-shadow: 0 40px 100px rgba(15, 23, 42, 0.4);
@@ -87,13 +87,15 @@
 
     /* 🔥 INCREASED LOGO SIZE 🔥 */
     .logo-icon {
-      width: 68px; /* Bumped up significantly */
+      width: 68px;
+      /* Bumped up significantly */
       height: 68px;
       display: flex;
       align-items: center;
       justify-content: center;
       background: var(--bg-card);
-      border-radius: 20px; /* Slightly softer corners for the larger size */
+      border-radius: 20px;
+      /* Slightly softer corners for the larger size */
       box-shadow:
         0 12px 24px rgba(15, 23, 42, 0.08),
         inset 0 0 0 1px var(--border);
@@ -113,7 +115,7 @@
       border-radius: 100px;
       padding: 10px 22px;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 13px; 
+      font-size: 13px;
       font-weight: 800;
       color: var(--text-primary);
       letter-spacing: 1.5px;
@@ -179,12 +181,13 @@
 
     .hero-title {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 94px; 
+      font-size: 94px;
       font-weight: 900;
       color: var(--text-primary);
       line-height: 0.92;
       letter-spacing: -3.5px;
-      margin: 24px 0 24px; /* Slightly tightened top margin */
+      margin: 24px 0 24px;
+      /* Slightly tightened top margin */
     }
 
     .hero-title .accent-word {
@@ -196,7 +199,7 @@
     }
 
     .hero-desc {
-      font-size: 19px; 
+      font-size: 19px;
       color: var(--text-muted);
       line-height: 1.65;
       max-width: 460px;
@@ -257,10 +260,10 @@
     .iphone-shell {
       position: relative;
       border-radius: 44px;
-      border: 4px solid var(--bg-card); 
-      background: #0F172A; 
+      border: 4px solid var(--bg-card);
+      background: #0F172A;
       overflow: hidden;
-      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.1);
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
     }
 
     .iphone-island {
@@ -317,17 +320,28 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 8px; 
+      height: 8px;
     }
 
-    .fc-academic::after { background: linear-gradient(90deg, var(--accent-academic), #818CF8); }
-    .fc-meal::after { background: linear-gradient(90deg, var(--accent-meal), #FDBA74); }
-    .fc-work::after { background: linear-gradient(90deg, var(--accent-work), #7DD3FC); }
-    .fc-finance::after { background: linear-gradient(90deg, var(--accent-finance), #86EFAC); }
+    .fc-academic::after {
+      background: linear-gradient(90deg, var(--accent-academic), #818CF8);
+    }
+
+    .fc-meal::after {
+      background: linear-gradient(90deg, var(--accent-meal), #FDBA74);
+    }
+
+    .fc-work::after {
+      background: linear-gradient(90deg, var(--accent-work), #7DD3FC);
+    }
+
+    .fc-finance::after {
+      background: linear-gradient(90deg, var(--accent-finance), #86EFAC);
+    }
 
     .feature-category {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 14px; 
+      font-size: 14px;
       font-weight: 900;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -336,7 +350,7 @@
 
     .feature-title {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 30px; 
+      font-size: 30px;
       font-weight: 800;
       color: var(--text-primary);
       letter-spacing: -0.8px;
@@ -344,11 +358,11 @@
     }
 
     .feature-desc {
-      font-size: 17px; 
+      font-size: 17px;
       color: var(--text-muted);
       line-height: 1.6;
       font-weight: 500;
-      position: relative; 
+      position: relative;
       z-index: 2;
     }
 

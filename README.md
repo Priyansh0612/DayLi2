@@ -74,6 +74,5 @@ Access the **Digital Project Poster** for a deep-dive into our architecture and 
 ---
 
 <div align="center">
-  <p>Developed with ❤️ at Lakehead University Thunder Bay</p>
-  <p><b>Priyansh · Shlesha · Drumil</b></p>
+  <p><b>Developed with ❤️ by Priyansh · Shlesha · Drumil</b></p>
 </div>
